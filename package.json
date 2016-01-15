@@ -1,0 +1,49 @@
+{
+  "name": "generator-restmen",
+  "version": "0.0.0",
+  "description": "Scaffold out a barebones REST API using MongoDB, Express.js, and NodeJS",
+  "homepage": "https://github.com/gmontalvoriv/generator-restmen",
+  "author": {
+    "name": "Gabriel Montalvo",
+    "email": "gabe.montalvo5@gmail.com",
+    "url": "http://gmontalvoriv.github.io/"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yeoman-generator",
+    "express",
+    "node",
+    "api"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.21.1",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.2"
+  },
+  "devDependencies": {
+    "yeoman-assert": "^2.0.0",
+    "eslint-config-xo-space": "^0.7.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "gmontalvoriv/generator-restmen",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "MIT"
+}
