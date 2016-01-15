@@ -9,15 +9,15 @@ module.exports = yeoman.Base.extend({
     const self = this
 
     this.prompt([{
-      name: 'projectName',
-      message: 'What do you want to name your project?',
+      name: 'apiName',
+      message: 'What do you want to name your API?',
       default: this.appname.replace(/\s/g, '-'),
       filter: x => _s.slugify(x)
     }, {
       name: 'databaseUrl',
       message: 'What is the URI for your MongoDB database?',
       store: true,
-      validate: x => x.length > 0 ? true : 'You have to provide a MongoDB database URL',
+      validate: x => x.length > 0 ? true : 'You have to provide a MongoDB database URI',
       filter: x => normalizeUrl(x)
     }, {
       name: 'portNumber',
@@ -26,7 +26,7 @@ module.exports = yeoman.Base.extend({
       default: '3000'
     }], props => {
       const tpl = {
-        projectName: props.projectName,
+        apiName: props.apiName,
         databaseUrl: props.databaseUrl,
         portNumber: props.portNumber
       }

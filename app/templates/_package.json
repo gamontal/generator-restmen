@@ -1,5 +1,5 @@
 {
-  "name": "<%= projectName %>",
+  "name": "<%= apiName %>",
   "version": "0.0.0",
   "main": "server.js",
   "dependencies": {
@@ -9,8 +9,11 @@
     "morgan": "^1.6.1"
   },
   "devDependencies": {
+    "nodemon": "1.3.7"
   },
   "scripts": {
-    "test": "grunt"
+    "start": "NODE_ENV=production node --harmony server.js",
+    "dev": "NODE_ENV=development node --debug --harmony server.js",
+    "local": "NODE_ENV=local nodemon --debug --harmony server.js"
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "generator-restmen",
   "version": "1.0.0",
-  "description": "Scaffold out a barebones REST API using MongoDB, Express.js, and NodeJS",
+  "description": "Scaffold out a barebones REST API that uses MongoDB, Express.js, and NodeJS",
   "homepage": "https://github.com/gmontalvoriv/generator-restmen",
   "author": {
     "name": "Gabriel Montalvo",
