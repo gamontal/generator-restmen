@@ -25,7 +25,7 @@ app.use('/api', routes);
 // catch 404 status code
 app.get('*', function(req, res){
   res.setHeader('Content-Type', 'application/json');
-  res.send(JSON.stringify({ message: 'Not Found' }, 2, 2), 404);
+  res.status(404).send(JSON.stringify({ message: 'Not Found' }, 2, 2));
 });
 
 // development error handler
