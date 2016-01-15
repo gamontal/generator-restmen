@@ -9,9 +9,9 @@
     "url": "http://gmontalvoriv.github.io/"
   },
   "files": [
-    "generators"
+    "app"
   ],
-  "main": "generators/index.js",
+  "main": "app/index.js",
   "keywords": [
     "yeoman-generator",
     "mongodb",
@@ -24,23 +24,6 @@
     "humanize-url": "^1.0.1",
     "normalize-url": "^1.2.0",
     "underscore.string": "^3.0.3"
-  },
-  "devDependencies": {
-    "yeoman-assert": "^2.0.0",
-    "eslint-config-xo-space": "^0.7.0",
-    "gulp": "^3.9.0",
-    "gulp-eslint": "^1.0.0",
-    "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-istanbul": "^0.10.3",
-    "gulp-mocha": "^2.0.0",
-    "gulp-plumber": "^1.0.0",
-    "gulp-nsp": "^2.1.0"
-  },
-  "eslintConfig": {
-    "extends": "xo-space",
-    "env": {
-      "mocha": true
-    }
   },
   "repository": "gmontalvoriv/generator-restmen",
   "scripts": {
