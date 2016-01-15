@@ -11,6 +11,10 @@
   "engines": {
     "node": ">=4"
   },
+  "scripts": {
+   "lint": "standard",
+   "test": "standard && ava"
+ },
   "files": [
     "app"
   ],
@@ -26,6 +30,20 @@
     "normalize-url": "^1.2.0",
     "underscore.string": "^3.0.3"
   },
+  "devDependencies": {
+   "ava": "*",
+   "babel-eslint": "^5.0.0-beta6",
+   "pify": "^2.2.0",
+   "standard": "^5.4.1",
+   "yeoman-assert": "^2.0.0",
+   "yeoman-test": "^1.0.0"
+ },
+ "standard": {
+   "parser": "babel-eslint",
+   "ignore": [
+     "app/templates/"
+   ]
+ },
   "repository": "gmontalvoriv/generator-restmen",
   "license": "MIT"
 }
