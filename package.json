@@ -1,6 +1,6 @@
 {
   "name": "generator-restmen",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Scaffold out a barebones REST API using MongoDB, Express.js, and NodeJS",
   "homepage": "https://github.com/gmontalvoriv/generator-restmen",
   "author": {
@@ -14,14 +14,16 @@
   "main": "generators/index.js",
   "keywords": [
     "yeoman-generator",
+    "mongodb",
     "express",
     "node",
     "api"
   ],
   "dependencies": {
     "yeoman-generator": "^0.21.1",
-    "chalk": "^1.0.0",
-    "yosay": "^1.0.2"
+    "humanize-url": "^1.0.1",
+    "normalize-url": "^1.2.0",
+    "underscore.string": "^3.0.3"
   },
   "devDependencies": {
     "yeoman-assert": "^2.0.0",
