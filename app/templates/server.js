@@ -14,6 +14,7 @@ var controller = require('./controllers/api'); // API controller
 var routes = express.Router();
 
 routes.route('/').get(controller.api);
+
 /* add your routes here
 
 */

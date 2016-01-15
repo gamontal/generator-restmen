@@ -14,7 +14,7 @@ test.beforeEach(async () => {
 test.serial('generates expected files', async () => {
   helpers.mockPrompt(generator, {
     projectName: 'test',
-    databaseUrl: 'mongodb://localhost:27017/testdb"',
+    databaseUrl: 'mongodb://localhost:27017/testdb',
     portNumber: '3000'
   })
 

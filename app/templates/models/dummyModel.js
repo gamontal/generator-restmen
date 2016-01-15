@@ -1,12 +1,12 @@
 /*
 var mongoose = require('mongoose');
-var schema = mongoose.Schema;
+var Schema = mongoose.Schema;
 
-var sampleSchema = new schema({
+var sampleSchema = new Schema({
     _id: Number,
     FirstName: String,
     LastName: String
 });
 
-module.exports = mongoose.model('collectionName', userSchema);
+module.exports = mongoose.model('collectionName', sampleSchema);
 */

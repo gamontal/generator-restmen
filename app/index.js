@@ -1,5 +1,4 @@
 'use strict'
-const normalizeUrl = require('normalize-url')
 const yeoman = require('yeoman-generator')
 const _s = require('underscore.string')
 
@@ -17,8 +16,7 @@ module.exports = yeoman.Base.extend({
       name: 'databaseUrl',
       message: 'What is the URI for your MongoDB database?',
       store: true,
-      validate: x => x.length > 0 ? true : 'You have to provide a MongoDB database URI',
-      filter: x => normalizeUrl(x)
+      validate: x => x.length > 0 ? true : 'You have to provide a MongoDB database URI'
     }, {
       name: 'portNumber',
       message: 'What port will you use to connect to the server?',
