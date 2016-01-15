@@ -8,10 +8,12 @@
     "email": "gabe.montalvo5@gmail.com",
     "url": "http://gmontalvoriv.github.io/"
   },
+  "engines": {
+    "node": ">=4"
+  },
   "files": [
     "app"
   ],
-  "main": "app/index.js",
   "keywords": [
     "yeoman-generator",
     "mongodb",
@@ -21,14 +23,9 @@
   ],
   "dependencies": {
     "yeoman-generator": "^0.21.1",
-    "humanize-url": "^1.0.1",
     "normalize-url": "^1.2.0",
     "underscore.string": "^3.0.3"
   },
   "repository": "gmontalvoriv/generator-restmen",
-  "scripts": {
-    "prepublish": "gulp prepublish",
-    "test": "gulp"
-  },
   "license": "MIT"
 }
