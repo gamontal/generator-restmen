@@ -15,13 +15,13 @@ module.exports = yeoman.Base.extend({
       filter: x => _s.slugify(x)
     }, {
       name: 'databaseUrl',
-      message: 'What is the URL of your MongoDB database?',
+      message: 'What is the URI for your MongoDB database?',
       store: true,
       validate: x => x.length > 0 ? true : 'You have to provide a MongoDB database URL',
       filter: x => normalizeUrl(x)
     }, {
       name: 'portNumber',
-      message: 'What port number will you use to connect to this server?',
+      message: 'What port will you use to connect to the server?',
       store: true,
       default: '3000'
     }], props => {
