@@ -7,3 +7,5 @@ mongoose.connect(config.database);
 exports.api = function(req, res) {
     res.json({ message: '<%= projectName %>' + ' v' + (require('../package').version)});
 };
+
+// ...

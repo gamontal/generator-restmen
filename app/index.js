@@ -35,10 +35,7 @@ module.exports = yeoman.Base.extend({
         self.fs.move(self.destinationPath(from), self.destinationPath(to))
       }
 
-      self.fs.copyTpl([
-        `${self.templatePath()}/**`,
-        '!**/cli.js'
-      ], self.destinationPath(), tpl)
+      self.fs.copyTpl([`${self.templatePath()}/**`], self.destinationPath(), tpl)
 
       mv('gitignore', '.gitignore')
       mv('_package.json', 'package.json')
@@ -50,6 +47,6 @@ module.exports = yeoman.Base.extend({
     this.spawnCommandSync('git', ['init'])
   },
   install () {
-    this.installDependencies({bower: false})
-  }
+   this.installDependencies({bower: false})
+ }
 })
