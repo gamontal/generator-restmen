@@ -3,12 +3,14 @@
  */
 
 var express = require('express');
+var bodyParser = require('body-parser');
 var morgan = require('morgan');
 var app = express();
 var config = require('./config');
 
-// use morgan to log request to the console
-app.use(morgan('dev'));
+app.use(morgan('dev')); // use morgan to log request to the console
+server.use(bodyParser.urlencoded({ extended: false }));
+server.use(bodyParser.json());
 
 var controller = require('./controllers/api'); // API controller
 var routes = express.Router();
