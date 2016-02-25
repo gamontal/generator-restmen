@@ -5,7 +5,7 @@
   "homepage": "https://github.com/gmontalvoriv/generator-restmen",
   "author": {
     "name": "Gabriel Montalvo"
-  }
+  },
   "engines": {
     "node": ">=4"
   },
