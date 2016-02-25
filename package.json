@@ -4,10 +4,8 @@
   "description": "Scaffold out a barebones REST API that uses MongoDB, Express.js, and NodeJS",
   "homepage": "https://github.com/gmontalvoriv/generator-restmen",
   "author": {
-    "name": "Gabriel Montalvo",
-    "email": "gabe.montalvo5@gmail.com",
-    "url": "http://gmontalvoriv.github.io/"
-  },
+    "name": "Gabriel Montalvo"
+  }
   "engines": {
     "node": ">=4"
   },
