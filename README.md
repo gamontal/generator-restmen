@@ -1,3 +1,5 @@
+## ⚠️ This repository is no longer maintained.
+
 # generator-restmen [![Build Status](https://travis-ci.org/gmontalvoriv/generator-restmen.svg?branch=master)](https://travis-ci.org/gmontalvoriv/generator-restmen)
 
 > Scaffold out a barebones REST API that uses MongoDB, Express.js, and NodeJS
